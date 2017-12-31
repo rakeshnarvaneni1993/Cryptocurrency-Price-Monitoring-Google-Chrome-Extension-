@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is awesome</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+</head>
+<style>
+	body{
+		width: 500px;
+		text-align: center;
+		font-family: 'Roboto Mono', monospace;
+	}
+	#loadingGif{
+		height: 400px;
+		width: 100%;
+	}
+	h2{
+		background-color: black;
+		color: white;
+	}
+	.headings{
+		font-weight: bolder;
+	}
+</style>
+<body>
+	<h2>Check Cryptocurrency Price!</h2>
+	<div class="row headings">
+		<div class="col-4">Name</div>
+		<div class="col-4">Symbol</div>
+		<div class="col-4">Price</div>
+	</div>
+	<div class="row prices">
+		<div class="col-4 offset-4">Loading ...</div>
+		<img id="loadingGif" src="./images/loading.gif" alt="Loading">
+	</div>
+<script type="text/javascript" src="./extensions/jquery-3.2.1.slim.min.js"></script>
+<script type="text/javascript" src="popup.js"></script>
+</body>
+</html>
